@@ -57,8 +57,12 @@ function CountDown() {
   return (
     <div className="countDownPage">
       {loading ? (
-        // Display loading indicator while loading
-        <div>Loading...</div>
+        <div className="loading">
+          <p>{t("Ramadan is loading")}</p>
+          <div className="progress-container">
+            <div className="progress-bar"></div>
+          </div>
+        </div>
       ) : countdown === t("expiredMessage") ? (
         <div className="countdown">
           <div className="countdownFinal">
@@ -100,7 +104,6 @@ function CountDown() {
           </div>
         </div>
       )}
-      {/* <DailyQuote /> */}
     </div>
   );
 }
