@@ -11,6 +11,19 @@ function CountDown() {
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
 
+  const handleShare = async () => {
+    try {
+      await navigator.share({
+        title: "Ramadan Countdown App",
+        text: "Counting down to the beginning of Ramadan!",
+        url: window.location.href,
+      });
+      console.log("Successfully shared!");
+    } catch (error) {
+      console.error("Error sharing:", error);
+    }
+  };
+
   useEffect(() => {
     const countDownDate = new Date("March 10, 2024 00:00:00").getTime();
 
@@ -79,8 +92,8 @@ function CountDown() {
             </select>
           </div>
           <h2 className="title">{t("title")}</h2>
+          <div className="countDownPage"></div>
           <p className="subtitle">{t("subtitle")}</p>
-
           <div className="time">
             <div className="timeCount days">
               <p>{days}</p>
@@ -102,6 +115,9 @@ function CountDown() {
               <p className="small">{t("seconds")}</p>
             </div>
           </div>
+          <button className="shareButton" onClick={handleShare}>
+            Share with friends
+          </button>
         </div>
       )}
     </div>
