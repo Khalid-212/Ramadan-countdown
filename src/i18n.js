@@ -7,7 +7,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         title: "Ramadan Countdown",
-        subtitle: "Remaining time until the end of Ramadan",
+        subtitle: "Remaining time until the beginning of Ramadan",
         days: "Days",
         hours: "Hours",
         minutes: "Minutes",
@@ -30,8 +30,8 @@ i18n.use(initReactI18next).init({
     },
     ar: {
       translation: {
-        title: "عد تنازلي رمضان",
-        subtitle: "الوقت المتبقي حتى نهاية رمضان",
+        title: "عد تنازلي إلى رمضان",
+        subtitle: "الوقت المتبقي حتى بداية رمضان",
         days: "أيام",
         hours: "ساعات",
         minutes: "دقائق",
