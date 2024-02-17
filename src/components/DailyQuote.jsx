@@ -15,9 +15,9 @@ function DailyQuote() {
       <footer className="footer">
         <p>
           Made with <span>❤</span> by{" "}
-          {/* <a href="https://khalidibrahim.co/" target="blank"> */}
-          Khalid Ibrahim
-          {/* </a> */}
+          <a href="https://khalidibrahim.co/" target="blank">
+            Khalid Ibrahim
+          </a>
         </p>
       </footer>
     </div>
