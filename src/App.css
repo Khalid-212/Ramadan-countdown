@@ -114,6 +114,35 @@
   box-shadow: 0 0 5px rgba(132, 77, 15, 0.7);
 }
 
+.loading > p {
+  font-size: 1rem;
+  color: #844d0f;
+  padding: 1rem;
+  margin: auto;
+}
+.progress-container {
+  width: 200px;
+  height: 20px;
+  background-color: #fef9c3;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e3d212;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #e3d212;
+  animation: fill 2s ease-in-out forwards;
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .title {
     font-size: 2rem;
