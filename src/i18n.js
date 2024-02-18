@@ -4,18 +4,6 @@ import { initReactI18next } from "react-i18next";
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: {
-      translation: {
-        title: "Ramadan Countdown",
-        subtitle: "Remaining time until the beginning of Ramadan",
-        days: "Days",
-        hours: "Hours",
-        minutes: "Minutes",
-        seconds: "Seconds",
-        expiredMessage: "Ramadan Mubarak!",
-        countdownMessage: "Remaining time until Ramadan",
-      },
-    },
     am: {
       translation: {
         title: "ረመዳን ስንት ቀን ቀረው?",
@@ -26,6 +14,18 @@ i18n.use(initReactI18next).init({
         seconds: "ሴኮንድ",
         expiredMessage: "ረመዳን ሙባረክ!",
         countdownMessage: "በሰነ ሰማይ ወደ ረመዳን ወደሚወጣ ጊዜ ተመን",
+      },
+    },
+    en: {
+      translation: {
+        title: "Ramadan Countdown",
+        subtitle: "Remaining time until the beginning of Ramadan",
+        days: "Days",
+        hours: "Hours",
+        minutes: "Minutes",
+        seconds: "Seconds",
+        expiredMessage: "Ramadan Mubarak!",
+        countdownMessage: "Remaining time until Ramadan",
       },
     },
     ar: {
@@ -41,7 +41,7 @@ i18n.use(initReactI18next).init({
       },
     },
   },
-  fallbackLng: "en", // Default language
+  fallbackLng: "am", // Default language
   interpolation: {
     escapeValue: false,
   },

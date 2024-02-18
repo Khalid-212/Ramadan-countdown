@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import DailyQuote from "./DailyQuote";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 function CountDown() {
@@ -86,8 +85,8 @@ function CountDown() {
         <div className="countdown">
           <div className="language">
             <select onChange={changeLanguage} value={i18n.language}>
-              <option value="en">English</option>
               <option value="am">Amharic</option>
+              <option value="en">English</option>
               <option value="ar">Arabic</option>
             </select>
           </div>
